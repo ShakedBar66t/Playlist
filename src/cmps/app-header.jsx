@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { store } from '../store/store.js'
 import { SET_VIDEOS } from "../store/reducers/video.reducer.js"
+import { AiOutlineSearch } from "react-icons/ai"
 
 export function AppHeader() {
     const [youtubeSearch, setYoutubeSearch] = useState('European history')
@@ -28,9 +29,9 @@ export function AppHeader() {
 
     return <header className="app-header">
         <form onSubmit={search}>
-            <input autoFocus placeholder="Search" value={query} onChange={(e) => setQuery(e.target.value)} />
+            <input autoFocus placeholder="Search" value={youtubeSearch} onChange={(e) => setYoutubeSearch(e.target.value)} />
             <button>
-                <AiOutlineSearch/>
+                <AiOutlineSearch />
             </button>
         </form>
     </header>
