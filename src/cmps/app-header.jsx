@@ -31,7 +31,7 @@ export function AppHeader() {
         <form onSubmit={search}>
             <input autoFocus placeholder="Search" value={youtubeSearch} onChange={(e) => setYoutubeSearch(e.target.value)} />
             <button>
-                <AiOutlineSearch/>
+                <AiOutlineSearch />
             </button>
         </form>
     </header>

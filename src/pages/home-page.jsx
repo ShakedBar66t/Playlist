@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { AppHeader } from "../cmps/app-header";
+import { VideoContainer } from '../cmps/video-container';
 import { VideosList } from "../cmps/videos-list";
 
 export function HomePage() {
@@ -7,6 +8,7 @@ export function HomePage() {
     return <section>
         <AppHeader />
         <VideosList />
+        {/* <VideoContainer /> */}
     </section>
 }
 
