@@ -10,12 +10,11 @@ body {
 form {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 1em;
     margin-bottom: 1em;
 }
 
 button {
-    background: #17f;
+    background: #d3d3d3;
     color: #fff;
     font: inherit;
     border: none;
@@ -88,3 +87,6 @@ ul {
     font-size: 80%;
     color: #555;
 }
+
+// Components
+@import "cmps/app-header";

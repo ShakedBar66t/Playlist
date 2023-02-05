@@ -24,14 +24,12 @@ export function AppHeader() {
     };
 
 
-    return (
-        <header className="app-header">
-            <form onSubmit={search}>
-                <input autoFocus value={query} onChange={(e) => setQuery(e.target.value)} />
-                <button>Search YouTube</button>
-            </form>
-        </header>
-    )
+    return <header className="app-header">
+        <form onSubmit={search}>
+            <input autoFocus value={query} onChange={(e) => setQuery(e.target.value)} />
+            <button>Search YouTube</button>
+        </form>
+    </header>
 
 
 }
