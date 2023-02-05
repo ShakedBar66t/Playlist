@@ -21,8 +21,7 @@ export function AppHeader() {
     const search = (e) => {
         e.preventDefault();
         searchYouTube(query).then(setList);
-    };
-
+    }
 
     return (
         <header className="app-header">
