@@ -1,12 +1,7 @@
 import { createStore, combineReducers } from 'redux'
-import { videoReducer } from './store/reducers/video.reducer'
-
-// import { userReducer } from './reducers/user.reducer.js'
-// import { systemReducer } from './system.reducer'
+import { videoReducer } from './reducers/video.reducer'
 
 const rootReducer = combineReducers({
-    // userModule: userReducer,
-    // systemModule: systemReducer,
     videoModule: videoReducer,
 })
 
