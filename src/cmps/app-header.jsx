@@ -1,7 +1,8 @@
 import { useState } from "react";
+import {AiOutlineSearch} from "react-icons/ai"
 
 export function AppHeader() {
-    const [query, setQuery] = useState('European history');
+    const [query, setQuery] = useState('');
     const [list, setList] = useState(null);
 
     async function searchYouTube(q) {
@@ -25,8 +26,10 @@ export function AppHeader() {
 
     return <header className="app-header">
         <form onSubmit={search}>
-            <input autoFocus value={query} onChange={(e) => setQuery(e.target.value)} />
-            <button>Search YouTube</button>
+            <input autoFocus placeholder="Search" value={query} onChange={(e) => setQuery(e.target.value)} />
+            <button>
+                <AiOutlineSearch/>
+            </button>
         </form>
     </header>
 
